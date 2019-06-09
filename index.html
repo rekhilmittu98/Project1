@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>
+Rekhil Mittu 200406565
+    </title>
+<style type="text/css">
+ 
+#rekhil {
+  width: 100%;
+  height: 100%;
+}
+#mittu {
+  width: 100%;
+  height: auto;
+  margin: auto;
+}
+#mittu div {
+  width: 200px;
+  height: 200px;
+  margin: auto;
+	margin-left: 500px;
+  top: 200px;
+  background-color: rgb(168, 47, 47);
+  border-radius: 100px;
+ position:fixed;
+  animation: mittu 2s linear infinite alternate;
+}
+	
+@keyframes mittu {
+  0% {
+    opacity: 0;
+    width: 1000px;
+    height: 1000px;
+    background-color: green;
+  }
+ 
+}
+@keyframes mittu {
+  from, to {
+	  
+    transform: translateY(0vh) scaleY(1);
+  }
+  50% {
+    transform: translateY(60vh) scaleY(1.2);
+  }
+}
+
+</style>
+</head>
+ 
+<body>
+	<h1> CLICK ON THE BALL </h1>
+<table>
+<tr>
+	
+	<section id="rekhil">
+      <article id="mittu" style="align-content: center">
+        <div></div>
+      </article>
+    </section></tr>
+	<tr>
+	
+	</table>
+<br/>
+<input id="bounceAW" type="button" value="Click to Bounce All Direction !"/>
+
+ 
+<script type="text/javascript" src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
+<script type="text/javascript" src="https://code.jquery.com/ui/1.12.1/jquery-ui.min.js"></script>
+ 
+ 
+<script type="text/javascript">
+ 
+    $( document ).ready(function() {
+ 
+    //Add bounce effect on Click of the DIV
+    $('#mittu').click(function () {
+          $(this).effect("bounce", { direction:'down', times:4 }, "veryslow");
+    });
+ 
+    $('#mittu').click(function () {
+          $(this).effect("bounce", { direction:'left', times:4 }, "veryslow");
+    });
+  $('#mittu').click(function () {
+          $(this).effect("bounce", { direction:'up', times:4 }, "veryslow");
+    });
+  $('#mittu').click(function () {
+          $(this).effect("bounce", { direction:'right', times:4 }, "veryslow");
+    });
+ 
+   
+ 
+   
+    //Bounce all DIVs on click of button
+    $("#bounceAW").click(function(){
+        $("article").click();
+    });
+});
+</script>
+ 
+</body>
+</html>

@@ -1,0 +1,38 @@
+#rekhil {
+  width: 100%;
+  height: 100%;
+}
+#mittu {
+  width: 50%;
+  height: auto;
+  margin: auto;
+}
+#mittu div {
+  width: 200px;
+  height: 200px;
+  margin: auto;
+  top: 200px;
+  background-color: rgb(168, 47, 47);
+  border-radius: 100px;
+  position: relative;
+  animation: mittu 2s linear infinite alternate;
+}
+	
+@keyframes mittu {
+  0% {
+    opacity: 0;
+    width: 400px;
+    height: 400px;
+    background-color: green;
+  }
+ 
+}
+@keyframes mittu {
+  from, to {
+	  
+    transform: translateY(25vh) scaleY(1);
+  }
+  50% {
+    transform: translateY(10vh) scaleY(1.2);
+  }
+}
